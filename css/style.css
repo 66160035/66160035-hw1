@@ -131,3 +131,19 @@ main p,
 .attraction-list {
     animation: fadeInUp 1s ease-in-out;
 }
+nav a:hover {
+    transform: scale(1.1); /* ขยายเมนู */
+    color: #FFEB3B;
+}
+
+.main-image:hover {
+    transform: scale(1.05); /* ขยายรูปภาพเล็กน้อย */
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.attraction-list li:hover {
+    color: #2E7D32;
+    transform: translateX(10px); /* เลื่อนลิสต์เมื่อ hover */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
