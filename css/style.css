@@ -1,0 +1,133 @@
+/* รีเซ็ตค่าพื้นฐาน */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Prompt', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f0f8f1; 
+    scroll-behavior: smooth;
+}
+
+/* ส่วนหัว */
+header {
+    background: linear-gradient(to right, #2E7D32, #66BB6A);
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* เมนูนำทาง */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1.5rem 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover,
+nav a.active {
+    color: #FFD700;
+    transform: scale(1.1);
+}
+
+/* เนื้อหาหลัก */
+main {
+    padding: 3rem 1.5rem;
+    background-color: #ffffff;
+    margin: 2rem auto;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    max-width: 1000px;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    color: #388E3C;
+}
+
+main p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+.main-image {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 15px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.main-image:hover {
+    transform: scale(1.05);
+}
+
+.attraction-item {
+    margin-bottom: 2rem;
+}
+
+.attraction-item h2 {
+    font-size: 2rem;
+    color: #388E3C;
+    margin-bottom: 1rem;
+}
+
+.attraction-item p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* ส่วนท้าย */
+footer {
+    background: #2E7D32;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.main-image,
+main h1,
+main p,
+.attraction-item {
+    animation: fadeInUp 1s ease-in-out;
+}
