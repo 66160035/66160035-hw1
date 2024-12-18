@@ -58,9 +58,9 @@ git commit -m "เพิ่ม ARIA labels ในฟอร์ม"
 git add contact.html
 git commit -m "เพิ่ม ARIA landmarks ในการนําทาง"
 git add css/style.css
-git commit -m "styleหน้าลายละเอียด" 
+git commit -m "styleติดต่อ" 
 git add contact.html
-git commit -m "หน้ารายละเอียด"  
+git commit -m "หน้าติดต่อ"  
 git checkout development 
 git merge feature/home-page
 git merge feature/about-page
