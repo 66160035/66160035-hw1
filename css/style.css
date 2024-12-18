@@ -132,18 +132,58 @@ main p,
     animation: fadeInUp 1s ease-in-out;
 }
 nav a:hover {
-    transform: scale(1.1); /* ขยายเมนู */
+    transform: scale(1.1);
     color: #FFEB3B;
 }
 
 .main-image:hover {
-    transform: scale(1.05); /* ขยายรูปภาพเล็กน้อย */
+    transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
 .attraction-list li:hover {
     color: #2E7D32;
-    transform: translateX(10px); /* เลื่อนลิสต์เมื่อ hover */
+    transform: translateX(10px);
     transition: transform 0.3s ease, color 0.3s ease;
+}
+.attractions {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.attraction-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.attraction-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.attraction-item h2 {
+    font-size: 1.8rem;
+    color: #2E7D32;
+    margin-bottom: 0.5rem;
+}
+
+.attraction-item p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
 }
