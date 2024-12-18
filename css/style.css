@@ -114,3 +114,20 @@ footer {
     font-size: 1rem;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
 }
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.main-image,
+main h1,
+main p,
+.attraction-list {
+    animation: fadeInUp 1s ease-in-out;
+}
